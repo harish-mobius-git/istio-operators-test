@@ -1,16 +1,16 @@
-name: istio
-bundle: kubernetes
-applications:
-  istio-ingressgateway-operator:
-    charm: ch:istio-gateway
-    source: ./charms/istio-gateway
-    scale: 1
-    trust: true
-    options:
-      kind: ingress
-  istio-pilot:
-    charm: ch:istio-pilot
-    scale: 1
-    trust: true
-relations:
-  - [istio-ingressgateway-operator:istio-pilot, istio-pilot:istio-pilot]
+# name: istio
+# bundle: kubernetes
+# applications:
+#   istio-ingressgateway-operator:
+#     charm: ch:istio-gateway
+#     source: ./charms/istio-gateway
+#     scale: 1
+#     trust: true
+#     options:
+#       kind: ingress
+#   istio-pilot:
+#     charm: ch:istio-pilot
+#     scale: 1
+#     trust: true
+# relations:
+#   - [istio-ingressgateway-operator:istio-pilot, istio-pilot:istio-pilot]
